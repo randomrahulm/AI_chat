@@ -1,42 +1,50 @@
-<<<<<<< HEAD
-# create-svelte
+### Documentation for Zip File: "colab_streamlit_app.zip"
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+#### Overview:
+This zip file contains two folders: "colab_notebook" and "streamlit_app". The "colab_notebook" folder contains a Jupyter Notebook intended to be run on Google Colab, while the "streamlit_app" folder contains a Streamlit web application.
 
-## Creating a project
+#### Instructions for Using the Notebook:
+1. **Upload to Google Colab**:
+   - Upload the notebook file located in the "colab_notebook" folder to your Google Colab environment.
 
-If you're seeing this, you've probably already done this step. Congrats!
+2. **Download Dataset to Google Drive**:
+   - Run the provided code cells in the notebook to download the dataset to your Google Drive.
+   - The dataset will be downloaded to a specified directory in your Google Drive.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+3. **Mount Google Drive**:
+   - Run the code cell to mount your Google Drive to the Colab environment.
+   - This step is necessary for accessing files stored in your Google Drive.
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+4. **Run Code Cells**:
+   - Execute each code cell in the notebook sequentially to load the dataset and perform any necessary data processing or analysis.
 
-## Developing
+#### Instructions for Running the Streamlit App Locally:
+1. **Create Conda Environment**:
+   - Navigate to the "streamlit_app" folder in the terminal/command prompt.
+   - Create a new Conda environment using the provided `environment.yml` file:
+     ```
+     conda env create -f environment.yml
+     ```
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+2. **Activate Conda Environment**:
+   - Activate the newly created Conda environment:
+     ```
+     conda activate <environment_name>
+     ```
 
-```bash
-npm run dev
+3. **Install Requirements**:
+   - Install the required Python packages listed in the `requirements.txt` file:
+     ```
+     pip install -r requirements.txt
+     ```
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+4. **Run Streamlit App**:
+   - Use the following command to run the Streamlit web application:
+     ```
+     streamlit run app.py
+     ```
+   - This command will start the Streamlit server and launch the app in your default web browser.
 
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
-=======
-# AI_chat
->>>>>>> e5a4c52c21fcfba58fe433e15c484ceebda47513
+#### Notes:
+- Ensure that you have appropriate permissions to access and execute files in your Google Drive and local environment.
+- Make sure to replace `<environment_name>` with the name of the Conda environment created in step 1.
