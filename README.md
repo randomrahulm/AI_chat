@@ -8,8 +8,8 @@ This zip file contains two folders: "colab_notebook" and "streamlit_app". The "c
    - Upload the notebook file located in the "colab_notebook" folder to your Google Colab environment.
 
 2. **Download Dataset to Google Drive**:
-   - Run the provided code cells in the notebook to download the dataset to your Google Drive.
-   - The dataset will be downloaded to a specified directory in your Google Drive.
+   - download the dataset to your Google Drive.
+   - [Dataset_link](https://docs.google.com/spreadsheets/d/1D7pW-i964C8zYVTQdH7m0hsNDu7espezgp47qYoGcNU/edit#gid=0)
 
 3. **Mount Google Drive**:
    - Run the code cell to mount your Google Drive to the Colab environment.
@@ -23,7 +23,7 @@ This zip file contains two folders: "colab_notebook" and "streamlit_app". The "c
    - Navigate to the "streamlit_app" folder in the terminal/command prompt.
    - Create a new Conda environment using the provided `environment.yml` file:
      ```
-     conda env create -f environment.yml
+     conda create -n <environment_name>
      ```
 
 2. **Activate Conda Environment**:
